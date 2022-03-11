@@ -11,8 +11,8 @@ public class Vendor {
 	@Column(length=30, nullable=false)
 	private String name;
 	@Column(length=30, nullable=false)
-	private String code;
-	@Column(columnDefinition="decimal(9,2) NOT NULL DEFAULT 0.0")
+	private String code; // Must be unique
+	@Column(columnDefinition="decimal(9,2) not null")
 	private double total;
 	private boolean active;
 	

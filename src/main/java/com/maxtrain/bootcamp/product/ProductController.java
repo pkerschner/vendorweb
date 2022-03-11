@@ -38,7 +38,7 @@ public class ProductController {
 	}
 	
 	@PostMapping
-	public ResponseEntity<Product> PostProduct(@RequestBody Product product) {
+	public ResponseEntity<Product> postProduct(@RequestBody Product product) {
 		if(product == null || product.getId() != 0) {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}

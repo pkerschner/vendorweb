@@ -8,7 +8,6 @@ import com.maxtrain.bootcamp.vendor.Vendor;
 public class Invoice {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(columnDefinition="int")
 	private int id;
 	@Column(length=30, nullable=false)
 	private String description;
@@ -19,7 +18,7 @@ public class Invoice {
 	
 	@ManyToOne(optional=false)
 	@JoinColumn(name="vendorId", columnDefinition="int")
-	private Vendor vendor; // FK
+	private Vendor vendor; // Foreign Key
 	
 	public Invoice() {}
 

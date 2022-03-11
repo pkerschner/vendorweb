@@ -9,7 +9,7 @@ public class Product {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	@Column(length=30, nullable=false)
-	private String partNbr; // must be unique
+	private String partNbr; // Must be unique
 	@Column(length=30, nullable=false)
 	private String name;
 	@Column(columnDefinition="decimal(9,2) not null")
