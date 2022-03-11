@@ -38,7 +38,7 @@ public class VendorController {
 	}
 	
 	@PostMapping
-	public ResponseEntity<Vendor> PostVendor(@RequestBody Vendor vendor) {
+	public ResponseEntity<Vendor> postVendor(@RequestBody Vendor vendor) {
 		if(vendor == null || vendor.getId() != 0) {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
