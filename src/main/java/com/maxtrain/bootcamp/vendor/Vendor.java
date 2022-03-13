@@ -3,7 +3,7 @@ package com.maxtrain.bootcamp.vendor;
 import javax.persistence.*;
 
 @Entity
-@Table(uniqueConstraints=@UniqueConstraint(name="UIDX_code", columnNames= {"code"}))
+@Table(uniqueConstraints=@UniqueConstraint(name="UIDX_code", columnNames={"code"}))
 public class Vendor {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
